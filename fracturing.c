@@ -62,7 +62,7 @@ double calculateArea()
     // Input: none
     // Output: A lines of text stating the area
 
-    double area = PI*pow(calculatePoints()/2, 2);
+    double area = PI*(pow(calculatePoints()/2, 2));
 
     printf("The area of the city encompassed by your request is %.3lf\n", area);
 
