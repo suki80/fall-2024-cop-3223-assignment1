@@ -16,8 +16,8 @@ double calculatePoints() // helper function
     int x1, x2, y1, y2;
 
     scanf("%d", &x1); 
-    scanf("%d", &y1);
     scanf("%d", &x2);
+    scanf("%d", &y1);
     scanf("%d", &y2);
 
     printf("Point #1 entered: x1 = %d", x1); 
