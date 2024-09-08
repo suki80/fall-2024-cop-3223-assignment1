@@ -37,7 +37,6 @@ double calculateDistance()
     // Output: A lines of text stating the distance 
 
     double distance = calculatePoints();
-
     printf("The distance between the two points is %.3lf\n", distance);
 
     return distance;
@@ -50,7 +49,6 @@ double calculatePerimeter() // outputs two lines of text
     // Output: A lines of text stating the perimeter
     
     double perimeter = 2*PI*(calculatePoints()/2);
-    
     printf("The perimeter of the city encompassed by your request is %.3lf\n", perimeter);
 
     return 1.0;
@@ -63,7 +61,6 @@ double calculateArea()
     // Output: A lines of text stating the area
 
     double area = PI*pow(calculatePoints()/2, 2);
-
     printf("The area of the city encompassed by your request is %.3lf\n", area);
 
     return 1.0;
@@ -76,7 +73,6 @@ double calculateWidth()
     // Output: A lines of text stating the width
 
     double width = calculatePoints();
-
     printf("The width of the city encompassed by your request is %.3lf\n", width);
 
     return 1.0;
@@ -99,7 +95,7 @@ int main(int argc, char **argv)
     // Purpose: calls each calculate function
     // Input: none
     // Output: prints each calulate functions' outputs
-    
+
     calculateDistance();
     calculatePerimeter();
     calculateArea();
