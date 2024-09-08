@@ -38,7 +38,7 @@ double calculateDistance()
 
     double distance = calculatePoints();
 
-    printf("The distance between the two points is %lf\n", distance);
+    printf("The distance between the two points is %.3lf\n", distance);
 
     return distance;
 }
@@ -51,7 +51,7 @@ double calculatePerimeter() // outputs two lines of text
     
     double perimeter = 2*PI*(calculatePoints()/2);
     
-    printf("The perimeter of the city encompassed by your request is %lf\n", perimeter);
+    printf("The perimeter of the city encompassed by your request is %.3lf\n", perimeter);
 
     return 1.0;
 }
@@ -64,7 +64,7 @@ double calculateArea()
 
     double area = 2*PI*sqrt(calculatePoints()/2);
 
-    printf("The area of the city encompassed by your request is %lf\n", area);
+    printf("The area of the city encompassed by your request is %.3lf\n", area);
 
     return 1.0;
 }
@@ -77,7 +77,7 @@ double calculateWidth()
 
     double width = calculatePoints();
 
-    printf("The width of the city encompassed by your request is %lf\n", width);
+    printf("The width of the city encompassed by your request is %.3lf\n", width);
 
     return 1.0;
 }
@@ -89,7 +89,7 @@ double calculateHeight()
     // Output: A lines of text stating the height
 
     double height = calculatePoints();
-    printf("The height of the city encompassed by your request is %lf\n", height);
+    printf("The height of the city encompassed by your request is %.3lf\n", height);
    
     return 1.0;
 }
