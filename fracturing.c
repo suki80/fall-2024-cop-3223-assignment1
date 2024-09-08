@@ -6,105 +6,68 @@
 
 #define PI 3.14159
 
-double calculatePoints() // helper function
+double calculate_distance() // outputs three lines of text
 {
-    // Purpose: assigns each input to a variable to then output lines of text
-    // with each point. Then returns distance calculated by using the inputted points. 
-    // Input: x1, y1, x2, y2 points
-    // Output: Lines of text including the entered points
-    
-    int x1, y1, x2, y2;
+    double x1, y1, x2, y2;
+    double distance; 
 
-    scanf("%d", &x1); 
-    scanf("%d", &y1);
-    scanf("%d", &x2);
-    scanf("%d", &y2);
+    printf("Point #1 entered: x1 = " ); 
+    scanf("%lf", &x1);
 
-    printf("Point #1 entered: x1 = %d", x1); 
-    printf("; y1 = %d", y1); 
-    printf("\nPoint #2 entered: x2 = %d", x2); 
-    printf("; y2 = %d\n", y2); 
+    printf("; y1 = ");
+    scanf("%lf", &y1);
+
+    printf("Point #2 entered: x2 = " ); 
+    scanf("%lf", &x2);
+
+    printf("; y2 = ");
+    scanf("%lf", &y2);
+    // assigns each input to a variable
    
-    double distance = sqrt((pow(x2 - x1, 2)) + (pow(y2 - y1, 2)));
-
+    distance = sqrt((pow(x2 - x1, 2)) + (pow(y2 - y1, 2)));
     return distance;
 }
 
-double calculateDistance() 
+double calculate_perimeter() // outputs two lines of text
 {
-    // Purpose: calls calculatePoints() and prints and returns the distance
-    // Input: none
-    // Output: A lines of text stating the distance
-
-    double distance = calculatePoints();
-
-    printf("The distance between the two points is %lf\n", distance);
-
-    return distance;
-}
-
-double calculatePerimeter() // outputs two lines of text
-{
-    // Purpose: calls calculatePoints() to find and print the perimeter then returns difficulty of function
-    // Input: none
-    // Output: A lines of text stating the perimeter
-    
-    double perimeter = 2*PI*(calculatePoints()/2);
+    double perimeter = 2*PI*(calculate_distance()/2);
     
     printf("The perimeter of the city encompassed by your request is %lf\n", perimeter);
 
     return 1.0;
 }
 
-double calculateArea()
+double calculate_area()
 {
-    // Purpose: calls calculatePoints() to find and print the area then returns difficulty of function
-    // Input: none
-    // Output: A lines of text stating the area
-
-    double area = 2*PI*sqrt(calculatePoints()/2);
-
+    double area = 2*PI*sqrt(calculate_distance()/2);
     printf("The area of the city encompassed by your request is %lf\n", area);
 
     return 1.0;
 }
 
-double calculateWidth()
+double calculate_width()
 {
-    // Purpose: calls calculatePoints() to find and print the width then returns difficulty of function
-    // Input: none
-    // Output: A lines of text stating the width
-
-    double width = 2*(calculatePoints()/2);
-
+    double width = 2*(calculate_distance()/2);
     printf("The width of the city encompassed by your request is %lf\n", width);
 
     return 1.0;
 }
 
-double calculateHeight()
+double calculate_height()
 {
-    // Purpose: calls calculatePoints() to find and print the height then returns difficulty of function
-    // Input: none
-    // Output: A lines of text stating the height
-
-    double height = calculatePoints();
-    printf("The height of the city encompassed by your request is %lf\n", height);
+    double height = 2*PI*(calculate_distance()/2);
+    printf("The height between the two points is %lf\n", height);
    
     return 1.0;
 }
 
 int main(int argc, char **argv)
 {
-    // Purpose: calls each calculate function
-    // Input: none
-    // Output: prints each calulate functions' outputs
-    
-    calculateDistance();
-    calculatePerimeter();
-    calculateArea();
-    calculateWidth();
-    calculateHeight();
+    printf("The distance between the two points is %lf\n", calculate_distance());
+    calculate_perimeter();
+    calculate_area();
+    calculate_width();
+    calculate_height();
 
     return 0;
 }
