@@ -34,7 +34,7 @@ double calculateDistance()
 {
     // Purpose: calls calculatePoints() and prints and returns the distance
     // Input: none
-    // Output: A lines of text stating the distance
+    // Output: A lines of text stating the distance 
 
     double distance = calculatePoints();
 
