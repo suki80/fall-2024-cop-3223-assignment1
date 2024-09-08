@@ -10,14 +10,14 @@ double calculatePoints() // helper function
 {
     // Purpose: assigns each input to a variable to then output lines of text
     // with each point. Then returns distance calculated by using the inputted points. 
-    // Input: x1, x2, y1, y2 points
+    // Input: x1, y1, x2, y2 points
     // Output: Lines of text including the entered points
     
-    int x1, x2, y1, y2;
+    int x1, y1, x2, y2;
 
     scanf("%d", &x1); 
-    scanf("%d", &x2);
     scanf("%d", &y1);
+    scanf("%d", &x2);
     scanf("%d", &y2);
 
     printf("Point #1 entered: x1 = %d", x1); 
