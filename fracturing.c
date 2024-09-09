@@ -14,13 +14,17 @@ double calculatePoints() // helper function
     // Output: Lines of text including the entered points
     
     int x1, x2, y1, y2;
-
+    
+    printf("Enter x1: ");
     scanf("%d", &x1); 
+    printf("Enter x2: ");
     scanf("%d", &x2);
+    printf("Enter y1: ");
     scanf("%d", &y1);
+    printf("Enter y2: ");
     scanf("%d", &y2);
-
-    printf("Point #1 entered: x1 = %d", x1); 
+    
+    printf("\nPoint #1 entered: x1 = %d", x1); 
     printf("; y1 = %d", y1); 
     printf("\nPoint #2 entered: x2 = %d", x2); 
     printf("; y2 = %d\n", y2); 
@@ -42,7 +46,7 @@ double calculateDistance()
     return distance;
 }
 
-double calculatePerimeter() // outputs two lines of text
+double calculatePerimeter() 
 {
     // Purpose: calls calculatePoints() to find and print the perimeter then returns difficulty of function
     // Input: none
